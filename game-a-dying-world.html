@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 	<head>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-72409305-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-
+		<title>Ian Baker | A Dying World</title>
+		
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Unity WebGL Player | ADyingWorld</title>
 		<link rel="shortcut icon" href="assets/unity/template-data/favicon.ico">
 		<link rel="stylesheet" href="assets/unity/template-data/style.css">
 		<script src="assets/unity/template-data/UnityProgress.js"></script>  
@@ -21,14 +12,70 @@
 		<script>
 			var gameInstance = UnityLoader.instantiate("gameContainer", "assets/unity/build/a-dying-world/Output.json", {onProgress: UnityProgress});
 		</script>
+		
+		<link href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+		<script src="vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<style>
+			.isb-title {
+				padding-left: 10%;
+			}
+			#isbNavbar {
+				padding-right: 10%;
+			}
+			.isb-nav-element {
+				margin-left: 25px;
+				margin-right: 25px;
+			}
+			nav {
+				padding-top: 25px;
+			}
+			.isb-bg-color {
+				background-color: #202020;
+				border-color: #202020;
+			}
+			.isb-white-text-color {
+				color: #ffffff;
+			}
+			.isb-grey-text-color {
+				color: #919191;
+			}
+			.isb-blue-text-color {
+				color: #1880ff;
+			}
+			.isb-content {
+				padding-top: 5%;
+				padding-left: 25%;
+				padding-right: 25%;
+				text-align: center;
+			}
+		</style>
 	</head>
-	<body>
+	<body class="isb-bg-color">
+		<nav class="navbar navbar-inverse isb-bg-color">
+			<div class="container-fluid isb-bg-color">
+				<div class="navbar-header isb-title">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#isbNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<h4 class="navbar-text"><span class="isb-grey-text-color">Ian Baker</span></h4>
+				</div>
+				<div class="collapse navbar-collapse" id="isbNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="isb-nav-element" href="work.html"><span class="isb-grey-text-color">Work</span></a></li>
+						<li><a class="isb-nav-element" href="about.html"><span class="isb-grey-text-color">About</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="webgl-content">
 			<div id="gameContainer" style="width: 640px; height: 576px"></div>
 			<div class="footer">
 				<div class="webgl-logo"></div>
 				<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-				<div class="title">ADyingWorld</div>
+				<div class="title isb-white-text-color">ADyingWorld</div>
 			</div>
 		</div>
 	</body>

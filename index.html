@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Google Analytics record page view -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-			ga('create', 'UA-72409305-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-
-		<title>shake-n-baker.io</title>
+		<title>Ian Baker | Game Development & Programming</title>
 		
-		<!-- Bootstrap core CSS -->
-		<link href="vendors/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+		<script src="vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<style>
+			.isb-title {
+				padding-left: 10%;
+			}
+			#isbNavbar {
+				padding-right: 10%;
+			}
+			.isb-nav-element {
+				margin-left: 25px;
+				margin-right: 25px;
+			}
+			nav {
+				padding-top: 25px;
+			}
+			.isb-bg-color {
+				background-color: #202020;
+				border-color: #202020;
+			}
+			.isb-white-text-color {
+				color: #ffffff;
+			}
+			.isb-grey-text-color {
+				color: #919191;
+			}
+			.isb-blue-text-color {
+				color: #1880ff;
+			}
+			.isb-content {
+				padding-top: 18%;
+				padding-left: 10%;
+				padding-right: 10%;
+				text-align: center;
+			}
+		</style>
 	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h1>About Me</h1>
-					<p>Hey there, I'm Ian and I made this site because it seemed like fun! I love learning new languages and I love playing
-					and making games. During weekdays I'm an automation tester that works primarily with Ruby/Cucumber but when the day is
-					done I get to use C#, Java, Python, Flash or whatever interests me. Check out what I've made and some of what I'm
-					working on!</p>
-					<p class="lead">Contact:</p>
-					<ul>
-						<li>Twitter: <a href="https://twitter.com/IanDevsGames">@IanDevsGames</a></li>
-						<li>Email: <a href="mailto:ianbaker24@gmail.com">ianbaker24@gmail.com</a></li>
-					</ul>
-					<p>Check out my GitHub repositories <a href="https://github.com/Shake-N-Baker">here</a>.</p>
+	<body class="isb-bg-color">
+		<nav class="navbar navbar-inverse isb-bg-color">
+			<div class="container-fluid isb-bg-color">
+				<div class="navbar-header isb-title">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#isbNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<h4 class="navbar-text"><span class="isb-grey-text-color">Ian Baker</span></h4>
 				</div>
-				<div class="col-md-4">
-					<h1>Completed Games</h1>
-					<ul>
-						<li><a href="game-lunar-hex.html"><b>Lunar Hex</b></a></li>Puzzle - Flash
-						<li><a href="game-space-shooter.html"><b>Space Shooter</b></a></li> Shooter - Flash
-						<li><a href="game-save-kitty-or-die-trying.html"><b>Save Kitty or Die Trying</b></a></li> Zelda like - Flash
-						<li><a href="game-simple-risk.html"><b>Simple Risk</b></a></li> Strategy Multiplayer - Flash, PlayerIO, C#
-						<li><a href="game-click-tower-defense.html"><b>Click Tower Defense</b></a></li> Tower defense and clicker - Flash
-						<li><a href="https://play.google.com/store/apps/details?id=com.isb.lunarhex&hl=en" target="_blank"><b>Lunar Hex for Android</b></a> <a href="https://www.youtube.com/watch?v=mGA40GAv9J8" target="_blank"><b>(Trailer)</b></a></li>Puzzle - Android, Java
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<h1>Working On</h1>
-					<ul>
-						<li><a href="game-a-dying-world.html"><b>A Dying World</b></a></li>Roguelike - Unity, C#
+				<div class="collapse navbar-collapse" id="isbNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="isb-nav-element" href="work.html"><span class="isb-grey-text-color">Work</span></a></li>
+						<li><a class="isb-nav-element" href="about.html"><span class="isb-grey-text-color">About</span></a></li>
 					</ul>
 				</div>
 			</div>
+		</nav>
+		<div class="isb-content">
+			<h1 class="isb-white-text-color">Game Development</h1>
+			<h1 class="isb-white-text-color" style="margin-top: 0px;"><span class="isb-blue-text-color">&</span> Programming</h1>
+			<br/>
+			<br/>
+			<a style="text-decoration: none;" href="work.html"><span class="isb-grey-text-color">View work</span></a>
 		</div>
 	</body>
 </html>
