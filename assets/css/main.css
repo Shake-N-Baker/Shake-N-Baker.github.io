@@ -1,0 +1,52 @@
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.isb-title {
+	padding-left: 10%;
+}
+#isbNavbar {
+	padding-right: 10%;
+}
+.isb-nav-element {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+nav {
+	padding-top: 25px;
+}
+.isb-bg-color {
+	background-color: #202020;
+	border-color: #202020;
+}
+.isb-white-text-color {
+	color: #ffffff;
+}
+.isb-grey-text-color {
+	color: #919191;
+}
+.isb-blue-text-color {
+	color: #1880ff;
+}
+.isb-content-main {
+	padding-top: 18%;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}
+.isb-content-work {
+	padding-top: 12%;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: left;
+}
+.isb-content-game {
+	padding-top: 5%;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: center;
+}
